@@ -25,7 +25,7 @@ const sizeMap = {
   lg: { height: 50, width: 50 },
   xl: { height: 60, width: 60 },
 };
-const radiusMap = {
+export const radiusMap = {
   xs: { borderRadius: 2 },
   sm: { borderRadius: 5 },
   md: { borderRadius: 8 },
