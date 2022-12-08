@@ -11,6 +11,6 @@ export default create({
   //   brandTitle: "Slick",
   brandUrl: "https://example.com",
   brandImage:
-    "https://res.cloudinary.com/dg4rjg58p/image/upload/c_fill,q_100,w_120/v1670489648/slick/Group_1512_ie4czu.png",
+    "https://res.cloudinary.com/dg4rjg58p/image/upload/c_fill,q_100,w_100/v1670489648/slick/Group_1512_ie4czu.png",
   brandTarget: "_self",
 });

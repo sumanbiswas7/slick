@@ -1,0 +1,38 @@
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: #603fef;
+  border-radius: 4px;
+  position: relative;
+}
+
+.cross-line-1,
+.cross-line-2 {
+  background-color: white;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+}
+
+.cross-line-1 {
+  transform: rotate(45deg);
+}
+
+.cross-line-2 {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (hover) {
+  .close-btn:hover {
+    /* transform: translateY(-1px); */
+    filter: brightness(90%);
+  }
+  .close-btn:active {
+    transform: translateY(1px);
+  }
+}

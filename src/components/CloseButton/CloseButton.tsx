@@ -1,17 +1,16 @@
 import React from "react";
-import "./Button.css";
+import "./CloseButton.css";
 
 interface Props {
-  label: string;
+  background?: "black" | "red" | "yellow" | "green" | "blue";
+  hexBg?: string;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  color?: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   radius?: "xs" | "sm" | "md" | "lg" | "xl";
-  background?: "black" | "red" | "yellow" | "green" | "blue";
   style?: React.CSSProperties;
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  disabled?: boolean;
-  hexBg?: string;
-  color?: string;
 }
+
 const colorMap = {
   black: { backgroundColor: "#25262B", color: "#fff" },
   red: { backgroundColor: "#FA5252", color: "#fff" },
@@ -20,62 +19,54 @@ const colorMap = {
   blue: { backgroundColor: "#228BE6", color: "#fff" },
 };
 const sizeMap = {
-  xs: { height: 20, padding: 11, fontSize: 10 },
-  sm: { height: 30, padding: 13, fontSize: 11 },
-  md: { height: 40, padding: 17, fontSize: 12 },
-  lg: { height: 50, padding: 20, fontSize: 16 },
-  xl: { height: 60, padding: 25, fontSize: 17 },
+  xs: { height: 20, width: 20 },
+  sm: { height: 30, width: 30 },
+  md: { height: 40, width: 40 },
+  lg: { height: 50, width: 50 },
+  xl: { height: 60, width: 60 },
 };
 const radiusMap = {
   xs: { borderRadius: 2 },
   sm: { borderRadius: 5 },
-  md: { borderRadius: 7 },
+  md: { borderRadius: 8 },
   lg: { borderRadius: 15 },
   xl: { borderRadius: 30 },
 };
 
-export const Button = ({
-  label,
-  size,
+export const CloseButton = ({
   background,
-  style,
-  radius,
-  onClick,
-  disabled,
   hexBg,
+  size,
+  radius,
   color,
+  style,
+  onClick,
 }: Props) => {
-  const title = label || "Settings";
   const btnColor = colorMap[background as keyof typeof colorMap];
   const btnSize = sizeMap[(size as keyof typeof sizeMap) || "md"];
   const btnRadius = radiusMap[(radius as keyof typeof radiusMap) || "sm"];
-  const hexCol = { backgroundColor: hexBg };
-  const btnTextColor = { color: color };
-  const disabledStyle = disabled && {
-    backgroundColor: "#A5A5A5",
-    color: "#656565",
-  };
+  const hexCol = { backgroundColor: hexBg || "#603fef" };
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (onClick) onClick(e);
   };
   const combiled_style = {
     ...btnSize,
+    ...btnRadius,
     ...hexCol,
     ...btnColor,
-    ...btnRadius,
     ...style,
-    ...btnTextColor,
-    ...disabledStyle,
   };
 
   return (
-    <button
-      disabled={disabled}
-      onClick={handleClick}
-      style={combiled_style}
-      className={disabled ? "disabled" : "btn"}
-    >
-      {title}
+    <button onClick={handleClick} style={combiled_style} className="close-btn">
+      <div
+        style={{ backgroundColor: color || "#fff" }}
+        className="cross-line-1"
+      ></div>
+      <div
+        style={{ backgroundColor: color || "#fff" }}
+        className="cross-line-2"
+      ></div>
     </button>
   );
 };

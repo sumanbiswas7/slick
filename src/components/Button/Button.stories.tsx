@@ -1,6 +1,6 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button as ButtonComponent } from "../components";
+import { ComponentStory } from "@storybook/react";
+import { Button as ButtonComponent } from "./Button";
 import ButtonDocs from "./ButtonDocs.mdx";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
