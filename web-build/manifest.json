@@ -1,0 +1,8 @@
+{
+  "description": "component library for react",
+  "display": "standalone",
+  "lang": "en",
+  "name": "@sumanbiswas7/slick",
+  "short_name": "@sumanbiswas7/slick",
+  "start_url": "/?utm_source=web_app_manifest"
+}
