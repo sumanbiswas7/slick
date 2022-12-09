@@ -19,3 +19,7 @@ ToggleSwitch.parameters = {
     page: ToggleSwDocs,
   },
 };
+
+ToggleSwitch.args = {
+  wrapperStyle: { margin: 10 },
+};

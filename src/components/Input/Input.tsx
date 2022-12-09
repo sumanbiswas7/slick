@@ -8,7 +8,7 @@ interface Props {
   style?: React.CSSProperties;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   accent?: "black" | "red" | "yellow" | "green" | "blue";
-  radius?: "xs" | "sm" | "md" | "lg" | "xl";
+  radius?: "sm" | "md" | "lg";
   size?: "sm" | "md" | "lg";
 }
 
@@ -20,16 +20,14 @@ const colorMap = {
   blue: { outlineColor: "#228BE6" },
 };
 const radiusMap = {
-  xs: { borderRadius: 2 },
-  sm: { borderRadius: 5 },
-  md: { borderRadius: 7 },
-  lg: { borderRadius: 15 },
-  xl: { borderRadius: 30 },
+  sm: { borderRadius: 2 },
+  md: { borderRadius: 5 },
+  lg: { borderRadius: 10 },
 };
 const sizeMap = {
-  sm: { padding: 8, fontSize: 11, marginTop: 2 },
-  md: { padding: 10, fontSize: 13, marginTop: 5 },
-  lg: { padding: 20, fontSize: 16, marginTop: 5 },
+  sm: { padding: 7, fontSize: 10, marginTop: 3 },
+  md: { padding: 9, fontSize: 12, marginTop: 4 },
+  lg: { padding: 15, fontSize: 14, marginTop: 5 },
 };
 
 export const Input = ({
@@ -44,7 +42,7 @@ export const Input = ({
 }: Props) => {
   const accentCol = colorMap[accent as keyof typeof colorMap];
   const inpRadius = radiusMap[radius as keyof typeof radiusMap];
-  const inpSize = sizeMap[size as keyof typeof sizeMap];
+  const inpSize = sizeMap[(size as keyof typeof sizeMap) || "md"];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) onChange(e);

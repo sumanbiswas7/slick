@@ -18,3 +18,7 @@ ToggleSwitch2.parameters = {
     page: ToggleSwDocs,
   },
 };
+
+ToggleSwitch2.args = {
+  wrapperStyle: { margin: 10 },
+};

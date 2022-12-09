@@ -14,9 +14,7 @@ const Template: ComponentStory<typeof CloseBtnComp> = (args) => (
 );
 
 export const CloseButton = Template.bind({});
-CloseButton.args = {
-  background: "black",
-};
+CloseButton.args = {};
 
 CloseButton.parameters = {
   docs: {

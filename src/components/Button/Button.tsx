@@ -3,8 +3,8 @@ import "./Button.css";
 
 interface Props {
   label: string;
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
-  radius?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "sm" | "md" | "lg";
+  radius?: "sm" | "md" | "lg";
   background?: "black" | "red" | "yellow" | "green" | "blue";
   style?: React.CSSProperties;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -12,6 +12,7 @@ interface Props {
   hexBg?: string;
   color?: string;
 }
+
 const colorMap = {
   black: { backgroundColor: "#25262B", color: "#fff" },
   red: { backgroundColor: "#FA5252", color: "#fff" },
@@ -20,18 +21,14 @@ const colorMap = {
   blue: { backgroundColor: "#228BE6", color: "#fff" },
 };
 const sizeMap = {
-  xs: { height: 20, padding: 11, fontSize: 10 },
-  sm: { height: 30, padding: 13, fontSize: 11 },
-  md: { height: 40, padding: 17, fontSize: 12 },
-  lg: { height: 50, padding: 20, fontSize: 16 },
-  xl: { height: 60, padding: 25, fontSize: 17 },
+  sm: { height: 28, padding: 12, fontSize: 10 },
+  md: { height: 35, padding: 13, fontSize: 11 },
+  lg: { height: 45, padding: 17, fontSize: 13 },
 };
 const radiusMap = {
-  xs: { borderRadius: 2 },
-  sm: { borderRadius: 5 },
-  md: { borderRadius: 7 },
-  lg: { borderRadius: 15 },
-  xl: { borderRadius: 30 },
+  sm: { borderRadius: 4 },
+  md: { borderRadius: 8 },
+  lg: { borderRadius: 12 },
 };
 
 export const Button = ({

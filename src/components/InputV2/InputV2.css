@@ -9,7 +9,7 @@
   position: absolute;
   padding-left: 1.7rem;
   border: 1px solid rgb(206, 212, 218);
-  padding-block: 0.5em;
+  padding-block: 0.4em;
   border-radius: 3px;
 }
 .inp2::placeholder {

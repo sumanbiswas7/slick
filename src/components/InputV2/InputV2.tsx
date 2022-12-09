@@ -7,7 +7,7 @@ interface Props {
   wrapperStyle?: React.CSSProperties;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   accent?: "black" | "red" | "yellow" | "green" | "blue";
-  radius?: "xs" | "sm" | "md" | "lg" | "xl";
+  radius?: "sm" | "md" | "lg";
   icon: ReactNode;
   hexAccent?: string;
 }
@@ -20,11 +20,9 @@ const colorMap = {
   blue: { outlineColor: "#228BE6" },
 };
 const radiusMap = {
-  xs: { borderRadius: 2 },
-  sm: { borderRadius: 5 },
-  md: { borderRadius: 7 },
-  lg: { borderRadius: 15 },
-  xl: { borderRadius: 30 },
+  sm: { borderRadius: 2 },
+  md: { borderRadius: 5 },
+  lg: { borderRadius: 10 },
 };
 
 export const InputV2 = ({

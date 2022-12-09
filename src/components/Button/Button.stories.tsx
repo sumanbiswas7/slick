@@ -18,7 +18,6 @@ export const Button = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Button.args = {
   label: "Settings",
-  background: "black",
 };
 Button.parameters = {
   docs: {

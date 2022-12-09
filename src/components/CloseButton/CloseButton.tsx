@@ -6,8 +6,8 @@ interface Props {
   hexBg?: string;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   color?: string;
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
-  radius?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "sm" | "md" | "lg";
+  radius?: "sm" | "md" | "lg";
   style?: React.CSSProperties;
 }
 
@@ -19,18 +19,14 @@ const colorMap = {
   blue: { backgroundColor: "#228BE6", color: "#fff" },
 };
 const sizeMap = {
-  xs: { height: 20, width: 20 },
-  sm: { height: 30, width: 30 },
-  md: { height: 40, width: 40 },
-  lg: { height: 50, width: 50 },
-  xl: { height: 60, width: 60 },
+  sm: { height: 20, width: 20 },
+  md: { height: 30, width: 30 },
+  lg: { height: 40, width: 40 },
 };
 export const radiusMap = {
-  xs: { borderRadius: 2 },
-  sm: { borderRadius: 5 },
-  md: { borderRadius: 8 },
-  lg: { borderRadius: 15 },
-  xl: { borderRadius: 30 },
+  sm: { borderRadius: 3 },
+  md: { borderRadius: 7 },
+  lg: { borderRadius: 30 },
 };
 
 export const CloseButton = ({
