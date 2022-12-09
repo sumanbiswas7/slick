@@ -1,0 +1,29 @@
+.inp2-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.inp2 {
+  width: 100%;
+  font-size: 0.9rem;
+  position: absolute;
+  padding-left: 1.7rem;
+  border: 1px solid rgb(206, 212, 218);
+  padding-block: 0.5em;
+  border-radius: 3px;
+}
+.inp2::placeholder {
+  color: rgb(206, 212, 218);
+}
+.inp2:focus {
+  border-color: transparent;
+  outline: 1px solid #603fef;
+}
+
+.icon-label {
+  margin-right: 3px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  padding-inline: 0.3rem;
+}

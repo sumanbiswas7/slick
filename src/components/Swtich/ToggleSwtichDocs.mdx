@@ -1,0 +1,21 @@
+<!-- Custom-MDX-Documentation.mdx -->
+
+# ToggleSwitch
+
+```js
+import { ToggleSwitch } from "@sumanbiswas7/slick";
+
+const handleValueChange = (val: boolean) => {
+  console.log(val);
+};
+
+<ToggleSwitch value={handleValueChange} />;
+```
+
+### Props
+
+| Name         | Type     | Description                    | Required |
+| ------------ | -------- | ------------------------------ | -------- |
+| `value`      | function | Dispaches checkbox check value | No       |
+| `background` | string   | Background color               | No       |
+| `hexBg`      | string   | Hex color for background       | No       |

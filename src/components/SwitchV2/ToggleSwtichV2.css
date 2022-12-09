@@ -1,0 +1,49 @@
+.switch {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide default HTML checkbox */
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider2 {
+  margin: 3rem;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #603fef;
+  width: 4rem;
+  height: 2rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 3rem;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider2 {
+  background-color: #603fef;
+}
+
+input:checked + .slider2:before {
+  transform: translateX(120%);
+}
