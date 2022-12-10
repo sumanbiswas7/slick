@@ -1,6 +1,6 @@
 {
   "name": "@sumanbiswas7/slick",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "component library for react",
   "scripts": {
     "rollup": "rollup -c",
