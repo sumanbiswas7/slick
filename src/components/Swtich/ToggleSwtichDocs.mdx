@@ -5,11 +5,17 @@
 ```js
 import { ToggleSwitch } from "@sumanbiswas7/slick";
 
-const handleValueChange = (val: boolean) => {
-  console.log(val);
-};
+function App() {
+  const handleValueChange = (val: boolean) => {
+    console.log(val);
+  };
 
-<ToggleSwitch value={handleValueChange} />;
+  return (
+    <>
+      <ToggleSwitch value={handleValueChange} />;
+    </>
+  );
+}
 ```
 
 ### Props
