@@ -1,7 +1,8 @@
 {
-  "name": "@sumanbiswas7/slick",
-  "version": "0.0.13",
-  "description": "component library for react",
+  "name": "sumanbiswas-slick",
+  "version": "0.0.2",
+  "description": "Component library for react",
+  "homepage": "https://sumanbiswas-slick.netlify.app/",
   "scripts": {
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",

@@ -10,7 +10,7 @@ Slick is a React components library that includes a list of React components, re
 ### Installing
 
 ```shell
-$ npm install @sumanbiswas7/slick
+$ npm install sumanbiswas-slick
 ```
 
 Once the package is installed, you can import any component from the library using `import` and use it like below 👇
