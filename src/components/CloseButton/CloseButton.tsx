@@ -54,14 +54,18 @@ export const CloseButton = ({
   };
 
   return (
-    <button onClick={handleClick} style={combiled_style} className="close-btn">
+    <button
+      onClick={handleClick}
+      style={combiled_style}
+      className="X792B2C0790B11ED89ED499BB1F405DC-close-btn"
+    >
       <div
         style={{ backgroundColor: color || "#fff" }}
-        className="cross-line-1"
+        className="X792B2C0790B11ED89ED499BB1F405DC-cross-line-1"
       ></div>
       <div
         style={{ backgroundColor: color || "#fff" }}
-        className="cross-line-2"
+        className="X792B2C0790B11ED89ED499BB1F405DC-cross-line-2"
       ></div>
     </button>
   );

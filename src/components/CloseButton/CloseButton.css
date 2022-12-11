@@ -1,4 +1,4 @@
-.close-btn {
+.X792B2C0790B11ED89ED499BB1F405DC-close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,30 +9,36 @@
   background-color: #603fef;
   border-radius: 4px;
   position: relative;
+  padding: 0;
+  margin: 5px;
 }
 
-.cross-line-1,
-.cross-line-2 {
+.X792B2C0790B11ED89ED499BB1F405DC-cross-line-1,
+.X792B2C0790B11ED89ED499BB1F405DC-cross-line-2 {
   background-color: white;
   width: 60%;
   height: 1px;
   position: absolute;
 }
 
-.cross-line-1 {
+.X792B2C0790B11ED89ED499BB1F405DC-cross-line-1 {
   transform: rotate(45deg);
 }
 
-.cross-line-2 {
+.X792B2C0790B11ED89ED499BB1F405DC-cross-line-2 {
   transform: rotate(-45deg);
 }
 
 @media only screen and (hover) {
-  .close-btn:hover {
+  .X792B2C0790B11ED89ED499BB1F405DC-close-btn:hover {
     /* transform: translateY(-1px); */
     filter: brightness(90%);
   }
-  .close-btn:active {
+  .X792B2C0790B11ED89ED499BB1F405DC-close-btn:active {
     transform: translateY(1px);
   }
+}
+
+.X792B2C0790B11ED89ED499BB1F405DC-close-btn:focus {
+  outline: none;
 }

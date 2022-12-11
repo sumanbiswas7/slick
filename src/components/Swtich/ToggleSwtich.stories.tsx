@@ -21,5 +21,5 @@ ToggleSwitch.parameters = {
 };
 
 ToggleSwitch.args = {
-  wrapperStyle: { margin: 10 },
+  // wrapperStyle: { margin: 10 },
 };

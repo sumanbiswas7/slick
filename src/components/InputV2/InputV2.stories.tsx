@@ -18,7 +18,7 @@ const Template: ComponentStory<typeof InputComponent> = (args) => (
 export const Input2 = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Input2.args = {
-  inputStyle: { maxWidth: 500 },
+  inputStyle: { width: 500 },
   wrapperStyle: { marginTop: 30 },
   placeholder: "Your name",
   icon: <MdOutlineAccountCircle color="#CED4DA" style={{ marginTop: 3 }} />,

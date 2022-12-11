@@ -44,7 +44,7 @@ export const ToggleSwitch = ({
   };
 
   return (
-    <label>
+    <label className="main-toggle-label">
       <label className="switch"></label>
       <input onChange={handleChange} className="switch-input" type="checkbox" />
       <span style={combined_styles} className="slider"></span>

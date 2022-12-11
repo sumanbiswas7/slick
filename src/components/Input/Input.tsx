@@ -6,6 +6,7 @@ interface Props {
   placeholder?: string;
   required?: boolean;
   style?: React.CSSProperties;
+  wrapperStyle?: React.CSSProperties;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   accent?: "black" | "red" | "yellow" | "green" | "blue";
   radius?: "sm" | "md" | "lg";
@@ -39,6 +40,7 @@ export const Input = ({
   accent,
   radius,
   size,
+  wrapperStyle,
 }: Props) => {
   const accentCol = colorMap[accent as keyof typeof colorMap];
   const inpRadius = radiusMap[radius as keyof typeof radiusMap];
@@ -51,7 +53,7 @@ export const Input = ({
   const combined_styles = { ...accentCol, ...inpRadius, ...inpSize, ...style };
 
   return (
-    <div className="inp-container">
+    <div style={wrapperStyle} className="inp-container">
       {label && (
         <label
           style={{ ...inpSize, padding: 0 }}

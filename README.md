@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <h1>Slick component 👇</h1>
-      <Button />;
+      <Button label="Settings" />;
     </>
   );
 }

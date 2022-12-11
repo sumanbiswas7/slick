@@ -70,7 +70,11 @@ export const Button = ({
       disabled={disabled}
       onClick={handleClick}
       style={combiled_style}
-      className={disabled ? "disabled" : "btn"}
+      className={
+        disabled
+          ? "E78F05D0790911EDA1B0B561FAB79F1A-disabled"
+          : "E78F05D0790911EDA1B0B561FAB79F1A-btn"
+      }
     >
       {title}
     </button>
