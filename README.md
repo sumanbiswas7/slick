@@ -16,13 +16,13 @@ $ npm install sumanbiswas-slick
 Once the package is installed, you can import any component from the library using `import` and use it like below 👇
 
 ```js
-import { Component } from "sumanbiswas7-slick";
+import { Button } from "sumanbiswas-slick";
 
 function App() {
   return (
     <>
       <h1>Slick component 👇</h1>
-      <Component />;
+      <Button />;
     </>
   );
 }
