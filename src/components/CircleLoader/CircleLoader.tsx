@@ -15,10 +15,11 @@ const colorMap = {
   yellow: { stroke: "#FAB005", color: "#fff" },
   blue: { stroke: "#228BE6", color: "#fff" },
 };
+
 const sizeMap = {
-  sm: { width: "1.5em" },
-  md: { width: "2.5em" },
-  lg: { width: "3.5em" },
+  sm: { width: "1.5em", strokeWidth: 3 },
+  md: { width: "2.5em", strokeWidth: 3 },
+  lg: { width: "3.5em", strokeWidth: 3 },
 };
 
 export const CircleLoader = ({ size, style, hexBg, color }: Props) => {
